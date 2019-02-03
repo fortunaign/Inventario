@@ -1,0 +1,25 @@
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Polvos','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Granulados','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Capsulas Duras','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Capsulas Blandas','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Tabletas','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Comprimidos','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Supositorios','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('1','Ovulos','0');
+
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('2','Pomadas','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('2','Pastas','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('2','Cremas','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('2','Jaleas','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('2','Emplastos','0');
+
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('3','Inyectables','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('3','Jarabes','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('3','Emulsiones','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('3','Suspensiones','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('3','Colirios','0');
+
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('4','Inhaladores','0');
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('4','Aerosoles','0');
+
+INSERT INTO `formas_tipos`(`form_id`, `formas_tipos_detalles`, `formas_tipos_status`) VALUES ('','','');

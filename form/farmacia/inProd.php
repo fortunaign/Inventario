@@ -26,7 +26,11 @@
                 <label for="">Concentracion</label><br>
                 <input type="text" name="procen" id=""><br>
                 <label for="">Forma Farmaceutica</label><br>
+                <select name="" id="">
+                    <option value="-">-</option>
+                </select><br>
                 <label for="">Forma de presentacion</label><br>
+                <input type="text" name="proname" id=""><br>
                 <label for="">Numero de lote</label><br>
                 <input type="text" name="pronumlot" id=""><br>
                 <label for="">Fecha Vencimiento</label><br>
@@ -37,15 +41,23 @@
             </td>
             <td>
                 <label for="">Fabricante</label><br>
+                <select name="" id="">
+                    <option value="-">-</option>
+                </select><br>
                 <label for="">Importador</label><br>
+                <input type="text"><br>
                 <label for="">Condisiones de almacenamiento</label><br>
+                <select name="" id="">
+                    <option value="-">-</option>
+                </select><br>
                 <label for="">Costo</label><br>
                 <input type="text" name="procosto" id=""><br>
                 <label for="">Cantidad</label><br>
                 <input type="number" name="cantidad" id=""><br>
                 <label for="">Unto de Reorden</label><br>
                 <input type="number" name="puntoreo" id=""><br>
-                <label for="">Estado</label>
+                <label for="">Estado</label><br>
+                <label for=""><input type="checkbox" name="status" id=""> Activo</label>
             </td>
         </tr>
     </table>
