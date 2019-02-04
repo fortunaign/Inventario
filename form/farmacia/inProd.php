@@ -9,9 +9,13 @@
         td {
             padding: 20px;
         }
+        #txtHint {
+            width: 150px;
+        }
     </style>
 </head>
 <body>
+<?php include 'php/utilidades.php'; ?>
     <h1><a href="/Inventario/form/farmacia/farmacia.php">Farmacia</a></h1>
     
     <form action="" method="post">
@@ -26,9 +30,22 @@
                 <label for="">Concentracion</label><br>
                 <input type="text" name="procen" id=""><br>
                 <label for="">Forma Farmaceutica</label><br>
-                <select name="" id="">
-                    <option value="-">-</option>
-                </select><br>
+                <select name="formas" onchange="showformas(this.value)">
+                    <option value=""></option>
+                    <?php
+                        $sql = "select * from farm_formas";
+                        $result = $mysqli->query($sql);
+
+                        if($result->num_rows > 0){
+                            while($row = $result->fetch_assoc()){
+                                echo "<option value='".$row["form_id"]."'>".$row["form_detalles"]."</option>";
+                            }
+                        }
+                        $mysqli->close();
+                    ?>
+                </select>
+                <br>
+                <div id="txtHint"></div>
                 <label for="">Forma de presentacion</label><br>
                 <input type="text" name="proname" id=""><br>
                 <label for="">Numero de lote</label><br>
@@ -47,9 +64,7 @@
                 <label for="">Importador</label><br>
                 <input type="text"><br>
                 <label for="">Condisiones de almacenamiento</label><br>
-                <select name="" id="">
-                    <option value="-">-</option>
-                </select><br>
+                <input type="text" name="proname" id=""><br>
                 <label for="">Costo</label><br>
                 <input type="text" name="procosto" id=""><br>
                 <label for="">Cantidad</label><br>
@@ -62,5 +77,22 @@
         </tr>
     </table>
     </form>
+    <script>
+        function showformas(str){
+            var xhttp;
+            if(str == ""){
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            }
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "php/tiposformas.php?q="+str, true);
+            xhttp.send();
+        }
+    </script>
 </body>
 </html>
